@@ -1,0 +1,42 @@
+minimumReleaseAgeExcludePrune: true
+trustPolicy: no-downgrade
+
+update:
+  ignoreDeps:
+    - typescript@7
+
+shellEmulator: true
+
+allowBuilds:
+  esbuild: true
+  simple-git-hooks: true
+
+catalogs:
+  api:
+    tsnapi: ^1.6.1
+  build:
+    tsdown: ^0.23.7
+    tsx: ^4.23.15
+
+    vite: ^8.3.0
+  core:
+    '@types/bun': ^1.4.3
+
+    '@types/node': ^26.6.6
+    typescript: ^6.0.3
+  git:
+    nano-staged: ^1.0.2
+
+    simple-git-hooks: ^2.14.0
+  lint:
+    '@antfu/eslint-config': ^10.0.0
+    eslint: ^9.5.0
+    eslint-plugin-slop: ^0.1.3
+
+    eslint-plugin-sonarjs: ^4.2.2
+    knip: ^6.45.1
+  test:
+    '@vitest/coverage-v8': ^5.1.0
+    tsdown-stale-guard: ^0.1.3
+
+    vitest: ^5.1.0

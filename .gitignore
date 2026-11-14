@@ -1,0 +1,14 @@
+.cache
+.githooks
+.idea
+.DS_Store
+coverage
+*.log
+*.tgz
+logs
+dist
+temp
+lib-cov
+node_modules
+.eslintcache
+.agents/skills

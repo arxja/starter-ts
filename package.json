@@ -1,0 +1,54 @@
+{
+  "name": "<name_placehlder>",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@12.18.0",
+  "description": "<description>",
+  "author": "Arash Jafari",
+  "license": "MIT",
+  "keywords": [],
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "knip": "knip",
+    "lint": "eslint --cache",
+    "start": "tsx src/index.ts",
+    "test:b": "vitest",
+    "test": "pnpm run build && vitest",
+    "typecheck": "tsc",
+    "ci": "pnpm run lint && pnpm run typecheck && pnpm run knip && pnpm run test"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:lint",
+    "@types/bun": "catalog:core",
+    "@types/node": "catalog:core",
+    "@vitest/coverage-v8": "catalog:test",
+    "eslint": "catalog:lint",
+    "eslint-plugin-slop": "catalog:lint",
+    "eslint-plugin-sonarjs": "catalog:lint",
+    "knip": "catalog:lint",
+    "nano-staged": "catalog:git",
+    "simple-git-hooks": "catalog:git",
+    "tsdown": "catalog:build",
+    "tsdown-stale-guard": "catalog:test",
+    "tsnapi": "catalog:api",
+    "tsx": "catalog:build",
+    "typescript": "catalog:core",
+    "vite": "catalog:build",
+    "vitest": "catalog:test"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm i --frozen-lockfile --ignore-scripts --offline && pnpm run ci && pnpx nano-staged"
+  },
+  "nano-staged": {
+    "*.{js,ts,tsx,json,css,md,yaml,vue}": "eslint --fix --no-warn-ignored"
+  }
+}
