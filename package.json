@@ -1,5 +1,5 @@
 {
-  "name": "<name_placehlder>",
+  "name": "name_placeholder",
   "type": "module",
   "version": "0.0.0",
   "packageManager": "pnpm@12.18.0",
@@ -36,6 +36,7 @@
     "eslint-plugin-sonarjs": "catalog:lint",
     "knip": "catalog:lint",
     "nano-staged": "catalog:git",
+    "publint": "catalog:lint",
     "simple-git-hooks": "catalog:git",
     "tsdown": "catalog:build",
     "tsdown-stale-guard": "catalog:test",
