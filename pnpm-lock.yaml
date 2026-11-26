@@ -209,7 +209,7 @@ catalogs:
       version: 4.2.2
     knip:
       specifier: ^6.45.1
-      version: 6.45.1
+      version: 6.48.0
     publint:
       specifier: ^0.3.25
       version: 0.3.25
@@ -251,7 +251,7 @@ importers:
         version: 4.2.2(eslint@9.39.5(jiti@2.7.0)(supports-color@7.2.0))
       knip:
         specifier: catalog:lint
-        version: 6.45.1
+        version: 6.48.0
       nano-staged:
         specifier: catalog:git
         version: 1.0.2
@@ -2304,8 +2304,8 @@ packages:
   keyv@4.5.4:
     resolution: {integrity: sha512-oxVHkHR/EJf2CNXnWxRLW6mg7JyCCUcG0DtEGmL2ctUo1PNTin1PUil+r/+4r5MpVgC/fn1kjsx7mjSujKqIpw==}
 
-  knip@6.45.1:
-    resolution: {integrity: sha512-zp3zXKy2cZWiIttdlWU5fisKxVQaLSU6471ej0KGz1GdHdaHxpzTAO/LIyFNc3gU3v1W7LJaqvYumoO3l/u+6A==}
+  knip@6.48.0:
+    resolution: {integrity: sha512-v+Gfp6uiOeXaaj+Khk2Z7/fTTZYWLnDwxZapQUyy8WoQFLYXiUHXqRdFJTwRnrKNA1gPXTPi5NGTKKLXyImVrg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
@@ -4982,7 +4982,7 @@ snapshots:
     dependencies:
       json-buffer: 3.0.1
 
-  knip@6.45.1:
+  knip@6.48.0:
     dependencies:
       formatly: 0.11.4
       get-tsconfig: 4.14.3
